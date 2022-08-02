@@ -1,13 +1,15 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-console */
+function numberOfOnes(num) {
+  let totalNumber = 0;
+  while (num !== 0) {
+    const result = num.toString().split('1').length - 1;
+    totalNumber += result;
+    num--;
+  }
 
-function numberOfOnes(num){
-    let totalNumber = 0;
-    while (num != 0){
-        let result = num.toString().split("1").length-1;
-        totalNumber+=result;
-        num--;
-    }
-
-    return totalNumber;
+  return totalNumber;
 }
 
 console.log(numberOfOnes(11));
