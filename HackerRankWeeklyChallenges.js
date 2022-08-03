@@ -54,13 +54,13 @@ function timeConversion(s) {
     '05': '17',
     '06': '18',
     '07': '19',
-    8: '20',
+    '08': '20',
     '09': '21',
     10: '22',
     11: '23',
     12: '00',
   };
-  // Hour 12
+  // Hour 12 A6171E2F7F95F1A1
   const currentHour = s.substring(0, s.indexOf(':'));
   const restOfTheHour = s.substring(s.indexOf(':'), s.length - 1);
   // //String :22:22
@@ -82,5 +82,5 @@ function timeConversion(s) {
 }
 
 plusMinus([1, 34, 23, 0, 0, -2, 4, -10, 1, -1]);
-timeConversion('08:21:23PM');
+console.log(timeConversion('08:21:23PM'));
 miniMaxSum([6, 4, 2, 3, 34, 6, 23, 123, 56, 32]);
