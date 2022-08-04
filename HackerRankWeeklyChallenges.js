@@ -81,6 +81,24 @@ function timeConversion(s) {
   return result;
 }
 
+function lonelyinteger(a) {
+  // Write your code here
+  let min = 100;
+  let minCount = 100;
+  a.forEach((el, i) => {
+    const count = a.filter((x) => x === el).length;
+    if (i === 0) {
+      min = el;
+      minCount = count;
+    } else if (count < minCount) {
+      min = el;
+      minCount = count;
+    }
+  });
+  return min;
+}
+
 plusMinus([1, 34, 23, 0, 0, -2, 4, -10, 1, -1]);
 console.log(timeConversion('08:21:23PM'));
 miniMaxSum([6, 4, 2, 3, 34, 6, 23, 123, 56, 32]);
+lonelyinteger([1, 1, 2, 34, 13, 5, 24, 12, 3, 65, 23, 67, 33, 21]);
